@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba konfigurasi Firebase</title>
+</head>
+<body>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyA5urpeuNADsEKGz_CpaxKWfbCdejD0mOU",
+          authDomain: "project-pba.firebaseapp.com",
+          databaseURL: "https://project-pba-default-rtdb.asia-southeast1.firebasedatabase.app",
+          projectId: "project-pba",
+          storageBucket: "project-pba.appspot.com",
+          messagingSenderId: "383722669677",
+          appId: "1:383722669677:web:0f47e9332eec2ef1e4e164",
+          measurementId: "G-YHG3VBQNQK"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>
